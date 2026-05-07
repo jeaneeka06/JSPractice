@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <a href="index.html">Back to Home</a>
 </head>
 
 <body>
@@ -16,16 +17,18 @@
         Click Me
     </button>
 
-    <p id="class">This is my practice paragraph for class.</p>
+    <p id="class">This is the original paragraph.</p>
+
+    <button onclick="changeParagraph()">
+        Change Text
+    </button>
 
     <script>
-        document.getElementById("class").textContent = "This text was changed with JavaScript";
+        function changeParagraph() {
+            document.getElementById("class").textContent = "the paragraph has been changed";
+        }
     </script>
 
-
-    <button onclick="show()">
-        Submit
-    </button>
 </body>
 
 </html>

@@ -35,4 +35,5 @@ function show() {
     alert("This has been submitted")
 }
 
-document.getElementById("class").textContent = "This text was changed with JavaScript!";
+
+
